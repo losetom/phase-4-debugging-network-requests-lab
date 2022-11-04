@@ -64,10 +64,21 @@ developing your own process.
 
   - How I debugged:
 
+  Toy.create was Toys.create rendering Server Error 500
+
+
+
 - Update the number of likes for a toy
 
   - How I debugged:
 
+  New toy has to render after an update so app/controllers/toy_controller.rb
+  add ` render json: toy `
+
+
+
 - Donate a toy to Goodwill (and delete it from our database)
 
   - How I debugged:
+
+  Added :destroy to routes.rb to handle the deletion of the toy 
